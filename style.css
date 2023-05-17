@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: aliceblue;
+}
+
+:root{
+    --brown-main:#593A28;
+}
+.container-fluid{
+    display: flex;
+    width: 100%;
+    background-color:black;
+    opacity: 0.8;
+    align-items: center;
+   
+}
+
+.burger-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+
+.container{
+    min-width: 30%;
+    max-width: 360px;
+    padding: 10px 10px;
+    padding-left: 30px;
+    margin-left: auto;
+    align-items: center;    
+}
+
+.container2{
+    display: flex;
+    width: 70%;
+    max-width: 740px;
+    margin-right:auto;
+    justify-content:right;
+    padding: 10px 20px;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.filterButton{
+    width: 150px;
+    padding: 10px;
+    background-color: #3b312b;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 0px 5px;
+}
+.filterButton:hover{
+    transition: 1000ms;
+    background-color: rgb(120, 10, 10);
+    color: black;
+}
+
+.filterButton.active{
+    background-color: #84573d
+}
+
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: lighter;
+    font-size: 25px;
+    margin-left:20px ;
+    align-items: center;
+ }
+
+nav a:hover{
+    color: #ff2400;
+    transition: 1000ms;
+}
+
+#Logo{
+   
+    font-size: 25px;
+    margin-left: 0px;
+ }
+
+body{
+    background-color:#3e3d3a ;
+    
+ }
+
+
+footer{
+   padding-top: 30px;
+   position: relative;
+   bottom: 50px;
+   width: 100%;
+   
+}
+
+footer p{
+    margin-top: 100px;
+   color: var(--brown-main);
+   font-size: 2.3rem;
+   font-weight: lighter;
+   bottom: 0px;
+   text-align: center;
+   
+}
+
+@media screen and (max-width:820px){
+    
+    
+    .burger-icon{
+        display:inline-block;
+        margin: 0px 0px 0px auto;
+    }
+    .container2 .burger-elements{
+        
+        display: none;
+        
+       
+    }
+    .burger-elements.show{
+        display: inline-block;
+        z-index: 100;
+        position: absolute;
+        right: 0;
+        top:48.8px;
+        padding: 20px;
+        width: 50%;
+        background-color: var(--brown-main)
+
+        
+
+    }
+    .container2 a{
+        margin: 0px;
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+   

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" type = "text/css" href = "main.css">
+    <link rel="shortcut icon" href="../2_lulia/images/breadico.ico" type="image/x-icon">
+    <title>Bakery Shop</title>
+</head>
+<body>
+
+    <header class = "container-fluid">  
+        <nav class = "container">
+            <a id = "Logo" href = "main.html">Bakery Shop</a>
+        </nav>
+
+        <nav class ="container2">
+            <div class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class = "burger-elements">
+                <a href = "news.html">News</a>
+                <a href = "reg.html">Sign up</a>
+                <a href = "log.html">Log in</a>
+            </div>
+        </nav>
+    </header>
+
+    
+    <div class = subscribe-window>
+        <p>"Stay up-to-date with the latest news and updates by subscribing to our newsletter.<br>Hit the subscribe button to never miss a beat</p>
+        <button class = "acceptBtn" onclick="setCookie()">Accept</button>
+        <button class = "declineBtn" onclick="removeWindow()">Close</button>
+    </div>
+
+    </div>
+    <div id = "filterContainer">
+        <button class = "all filterButton">All</button>
+        <button class = "new filterButton">New</button>
+        <button class = "most filterButton">Most orders</button>
+
+    </div>
+    <div class = "blocks"></div>
+    
+    <div class = "more-container">
+        <button class = "moreBtn">Show more</button>
+    </div>
+
+
+    <div class="advertise">
+        <div class="close-timer">
+            <img class="close" src = "close.svg">
+            <p class="timer">0</p>
+        </div>
+        
+        <img src="advertise.jpg" alt="advertise" class="advertiseImg">
+        
+    </div>
+    
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html> 
